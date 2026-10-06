@@ -1,10 +1,12 @@
 from flask import Flask, render_template, request, jsonify
+from flask_cors import CORS
 import re
 import random
 import math
 import os
 
 app = Flask(__name__)
+CORS(app)
 
 # ─────────────────────────────────────────────
 # DATA: SKILL DATABASE
